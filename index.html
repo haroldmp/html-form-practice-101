@@ -1,86 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700i,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
   <title>Document</title>
+  <link rel="stylesheet" href="contactPage.css">
 </head>
+
 <body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
+  <header class="ContactMe">
+    <h1>Contact Me</h1>
+    <div class="Contact">
+      <p>Addres:7655 N fm Rd 620 Austin, TX</p>
+      <p>Phone number:647-467-3647</p>
+      <p>Email:Acacoding@gmail.com</p>
     </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
+  </header>
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div class="box">
+      <div class="labels">
+        <input class="name" type="text" name="name" id="name" placeholder="name" />
+        <input class="email" type="email" name="email" id="email" placeholder="email" />
+      <input class="subject" type="subject" name="subject" id="subject" placeholder="subject" />
       </div>
       <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
+        <input class="phone" type="tel" name="phone" id="phone" placeholder="Type here your message..." />
       </div>
     </div>
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+      <button type="submit">Submit</button>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
       </div>
-      <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-      </div>
-    </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
   </form>
 </body>
+
 </html>
